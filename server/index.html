@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head><title> Progetto client server</title></head>
+       
+        <body>
+            <p>Autori Nicola Bernabè e Mattia Strada</p>
+        <h1>Ciao questa è la pagina per gestire i comandi!</h1>
+        
+        
+        <form name="numero" action="/"  method="POST"   >
+             Numero messaggi da server a client (da 1 a 1000000) :<input type='number' value=5000 name='n_messaggi' id='n_messaggi1' min="0" max="1000000" step="1"><br>
+             Numero coppie di messaggi da client a server (da 1 a 10000) :<input type='number' value=1000 name='n_messaggi_coppie' id='n_messaggi_coppie1' min="0" max="10000" step="1"><br>
+             I byte per ogni messaggio è (da 1 a 65536) :<input type='number' value=1480 name='n_byte' id='n_byte1' min="0" max="65536" step="1"><br>
+             <input type="submit" value="invia_tutto" id='invia' onclick="setTimeout('document.getElementById(\'' + this.id + '\').disabled=true;', 50);">
+            
+            
+            
+
+        </form> 
+
+        <script>
+        var ws = null;
+            function connect(event) {
+                var itemId = document.getElementById("itemId")
+                var token = document.getElementById("token")
+                ws = new WebSocket("ws://localhost:8000/client");
+                ws.onmessage = function(event) {
+                    var messages = document.getElementById('messages')
+                    var message = document.createElement('li')
+                    var content = document.createTextNode(event.data)
+                    message.appendChild(content)
+                    messages.appendChild(message)
+                };
+                event.preventDefault()
+            }
+        </script>
+        <h2>Calcolo latenza</h2><br>
+            Il numero messaggi è {{n_messaggi_stampo}} <br>
+            La latenza media è {{latenza}}[secondi]<br>
+            Il tempo totale per questa procedura è {{t_totale}}[secondi]<br>
+        <h2>Calcolo throughput</h2><br>
+            Il numero di coppie messaggi è {{n_messaggi_coppie22}}<br>
+            byte per messaggio {{byte_messaggio}}[byte]<br>
+            Il tempo per i 2 messaggi medio è {{media_tempo_2_messaggio}}[secondi]<br>
+            Il throughput è {{throughput1}}[Mbyte/secondi]<br>
+            Il tempo totale per questa procedura è {{t_thrughput}}<br>
+           
+    </body>
+</html>

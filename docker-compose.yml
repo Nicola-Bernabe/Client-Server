@@ -1,0 +1,15 @@
+version: "3"
+services:
+  server:
+    build: server/
+    #command: python server_docker.py
+    command: uvicorn server_docker:app --port 8000 --host 0.0.0.0 --reload
+    ports:
+      - 8000:8000
+
+  client:
+    build: client/
+    command: python client_docker.py
+    network_mode: host
+    depends_on:
+      - server
