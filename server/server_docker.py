@@ -11,6 +11,7 @@
 #https://stackoverflow.com/questions/2067042/disabling-an-html-button-while-waiting-for-a-result  per disabilitare bottone
 
 #uvicorn server_docker:app --reload
+#sistemato con commit prova
 #http://127.0.0.1:8000/  
 
 
