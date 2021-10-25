@@ -1,5 +1,6 @@
 # Descrizione di cosa fa
 Questo progetto è composto da 2 componenti:il server e il client. Ci sono le 2 cartelle con i vari file: 
+- docker-compose.yml
 - client:
   -  client_docker.py
   -  Dockerfile
@@ -7,7 +8,7 @@ Questo progetto è composto da 2 componenti:il server e il client. Ci sono le 2 
   -  Dockerfile
   -  index.html
   -  server_docker.py
--docker-compose.yml
+
  
 Come si può notare ci sono i file per far eseguire Docker,infatti usando gli strumenti e i comandi corretti si può eseguire il codice anche in quel modo e verrà discusso nel paragrafo 'Come eseguire il progetto'.
 Il server_docker.py usa Fas api che è un framework Web moderno e molto veloce , poi nel sito ufficiale si trova un esempio che utilizza la Websocket che è utilizzata per il collegamento con il client. Il client usa anchessa la Websocket per il collegamento al server.
