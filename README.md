@@ -1,6 +1,6 @@
 # Descrizione di cosa fa
-Questo progetto è composto da 2 componenti:il server e il client. Ci sono le 2 cartelle con i vari file:
--client
+Questo progetto è composto da 2 componenti:il server e il client. Ci sono le 2 cartelle con i vari file: 
+-client:
   -  client_docker.py
   -  Dockerfile
 -server:
