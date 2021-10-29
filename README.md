@@ -57,4 +57,4 @@ Un altro problema è che l' host deve esssere 0.0.0.0 nel server quando viene av
 
 # Author
 
-- Nicola Bernabè e Mattia Strada
+- Nicola Bernabè
