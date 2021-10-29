@@ -38,12 +38,12 @@ Per semplicità è utile usare delle linee di comando dal terminale e installare
 - pip install docker
 - pip install docker-compose
 
-Se si utilizasse Window per usare Docker bisognerebbe fare i seguenti passaggi:
-- https://www.docker.com/products/docker-desktop    scarico la versione di window
+Se si utilizasse Windows per usare Docker bisognerebbe fare i seguenti passaggi:
+- https://www.docker.com/products/docker-desktop    scarico la versione di windows
 - https://nickjanetakis.com/blog/setting-up-docker-for-windows-and-wsl-to-work-flawlessly   è un link utile nel caso docker volesse anche WSL: basta seguire questa guida per la configurazione
 
 # Problemi e possibili soluzioni
-Nel caso si usasse Window bisognerebbe avviare Docker Desktop e poi eseguire il progetto con il comando 'docker build'
+Nel caso si usasse Windows bisognerebbe avviare Docker Desktop e poi eseguire il progetto con il comando 'docker build'
 Un altro problema è che l' host deve esssere 0.0.0.0 nel server quando viene avviato docker, questo perchè deve ascoltare tutte le interfacce.Prima abbiamo detto che docker isola i processi, quindi è necessario che si ascoltino tutti gli ip usando appunto 0.0.0.0
 
 # Link utili
