@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 #link usati durante il progetto
 #https://www.youtube.com/watch?v=UIv6UyOIUAk
-#https://github.com/talkpython/modern-apis-with-fastapi/blob/main/ch03-first-api/main.py
-#https://fastapi.tiangolo.com/deployment/docker/
-#http://127.0.0.1:8000/docs
+#https://fastapi.tiangolo.com/deployment/docker/  #per aggiornare e passare parametri server-html
+#http://127.0.0.1:8000/docs  vedere documentazione fast api del proprio progetto
 #https://asmen.icopy.site/awesome/awesome-fastapi/ codici client server con websocket
 #https://www.youtube.com/watch?v=K8_eJlA-Iwg&list=PL41j7vkwrst4CA0PXCzCeZ05BcCNyj0rS&index=5   per le porte ecc...
 #https://stackoverflow.com/questions/64156387/reduce-latency-in-asyncio
